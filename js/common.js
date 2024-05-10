@@ -122,4 +122,39 @@ $(function () {
     $("#sub_container .sub_menu_list li").removeClass("on");
     $(this).addClass("on");
   });
+
+  //연혁 슬라이더
+  var process_slide = new Swiper(".history_slide", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: false,
+    autoplay: false,
+    delay: 8000,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      dragSize: 60,
+    },
+
+    breakpoints: {
+      712: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      
+    },
+  });
 });
