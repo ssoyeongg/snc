@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nanum+Brush+Script&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="/snc/css/common.css">
+  <link rel="stylesheet" href="/snc/css/layout.css">
+  <link rel="stylesheet" href="/snc/css/sub.css">
+  <link rel="stylesheet" href="/snc/css/font.css">
+  <link rel="stylesheet" href="/snc/css/media.css">
+  <link rel="stylesheet" href="/snc/css/media01.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="/snc/js/jquery-3.7.1.min.js"></script>
+  <script src="/snc/js/common.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>SNC</title>
+</head>
+
+<body>
+  <header id="header">
+    <h1>
+      <a href="/snc/index.html">
+        <img src="/snc/img/common/logo.svg" alt="SNC" class="default">
+        <img src="/snc/img/common/logo_white.svg" alt="SNC" class="hover">
+      </a>
+    </h1>
+    <!-- GNB영역 및 기타메뉴 -->
+    <nav id="nav">
+      <ul>
+        <li>
+          <a href="/snc/page/sub01_01.html">회사소개</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub01_01.html">CE0인사말</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_02.html">기업현황</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_03.html">연혁</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_04.html">경영이념</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_05.html">오시는 길</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub02_01.html">제품안내</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub02_01.html">LADDER</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_02.html">SOLID</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_03.html">PERFORATED</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_04.html">STRUT</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_05.html">SUPPORT</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub03_01.html">용융아연도금</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub03_01.html">도금공정</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub03_02.html">생산설비</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub03_03.html">환경</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub04_01.html">R&D CENTER</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub04_01.html">연구개발</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub04_02.html">검사설비</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub05_01.html">RESOURCES</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub05_01.html">Catalog</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub05_02.html">Certificate</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="etc_menu">
+      <ul class="lang_area">
+        <li>
+          <button type="button" class="lang_btn">
+            KR
+          </button>
+          <i class="xi-globus"></i>
+          <ol class="lang_list">
+            <li>
+              <a href="#">KOR</a>
+            </li>
+            <li>
+              <a href="#">ENG</a>
+            </li>
+            <li>
+              <a href="#">JAP</a>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <button type="button" class="menu">
+        <img src="/snc/img/common/hamburger_menu.svg">
+      </button>
+    </div>
+    <button type="button" class="menu01">
+      <img src="/snc/img/common/hamburger_menu.svg">
+    </button>
+  </header>
+  <!-- 데스크탑 전체 메뉴 -->
+  <div id="site_map" class="open">
+    <img src="/snc/img/common/logo_white.svg">
+    <button type="button">
+      <i class="xi-close"></i>
+    </button>
+    <ul>
+      <li>
+        <a href="/snc/page/sub01_01.html">회사소개</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub01_01.html">CEO 인사말</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_02.html">기업현황</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_03.html">연혁</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_04.html">경영이념</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_05.html">오시는 길</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub02_01.html">제품안내</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub02_01.html">LADDER</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_02.html">SOLID</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_03.html">PERFORATED</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_04.html">STRUT</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_05.html">SUPPORT</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub03_01.html">용융아연도금</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub03_01.html">도금공정</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub03_02.html">생산설비</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub03_03.html">환경</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub04_01.html">R&D CENTER</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub04_01.html">연구개발</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub04_02.html">검사설비</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub05_01.html">RESOURCES</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub05_01.html">Catalog</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub05_02.html">Certificate</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!--서브배너 영역-->
+  <main id="sub_container">
+    <div class="sub_banner sub_banner01">
+      <div class="sub_banner_inner">
+        <h2>회사소개</h2>
+        <!--서브 탭 메뉴-->
+        <ul class="menu_list">
+          <li>
+            <a href="/snc/page/sub01_01.html">CEO 인사말</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_02.html">기업현황</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_03.html" class="on">연혁</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_04.html">경영이념</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_05.html">오시는 길</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub_inner">
+      <h3>연혁</h3>
+      <!--콘텐츠 영역-->
+      <section class="sub01_03"> <!--각자 콘텐츠에 맞는 섹션 이름 적기-->
+        <div class="history_tab">
+          <ul>
+            <li data-title="years_2020" class="on">
+              현재~2020
+            </li>
+            <li data-title="years_2019">
+              2019~2011
+            </li>
+            <li data-title="years_2010">
+              2010~2002
+            </li>
+          </ul>
+        </div>
+        <div class="h_container">
+          <div id="years_2020" class="history_cont" style="display: block;">
+            <div class="h_content">
+              <h4>2022</h4>
+              <dl>
+                <dt class="on">
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Aug.</b>
+                    <li>스마트 공장 MES도입</li>
+                  </ul>
+                  <ul>
+                    <b>Jan.</b>
+                    <li>MITSUBISHI ELECTRIC 100주년 감사장 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2021</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Dec.</b>
+                    <li>김해 장학재단 감사패 수상</li>
+                  </ul>
+                  <ul>
+                    <b>Oct.</b>
+                    <li>홍콩 수소 발전소 수주</li>
+                  </ul>
+                  <ul>
+                    <b>Jun.</b>
+                    <li>수출 강소기업 선정</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2020</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Jul.</b>
+                    <li>뿌리기업 선정</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="years_2019" class="history_cont">
+            <div class="h_content">
+              <h4>2017</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Jan.</b>
+                    <li>DSME 안전관리 우수상 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2016</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Feb.</b>
+                    <li>스리랑카 68주년 독립 기념 감사패 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2015</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Dec.</b>
+                    <li>김해시 체육회 감사패 수상</li>
+                  </ul>
+                  <ul>
+                    <b>Jun.</b>
+                    <li>고성장 수출 기업 지정</li>
+                  </ul>
+                  <ul>
+                    <b>Mar.</b>
+                    <li>자랑스런 김해시 CEO상 수상<br>
+                    EXXON MOBIL 품질 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2014</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Dec.</b>
+                    <li>삼성중공업 안전관리 우수상 수상<br>
+                    MITSUBISHI ELECTRIC. 감사장 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2013</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Nov.</b>
+                    <li>TOSHIBA PLANT SYSTEMS&SERVICES 품질상 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2012</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Dec.</b>
+                    <li>49회 무역의 날 국무총리표창 수상<br>
+                    49회 무역의 날 천만불 수출탑 수상</li>
+                  </ul>
+                  <ul>
+                    <b>Oct.</b>
+                    <li>NEGUROSU 감사장 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2011</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Jun.</b>
+                    <li>연구개발센터</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="years_2010" class="history_cont">
+            <div class="h_content">
+              <h4>2010</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Dec.</b>
+                    <li>김해시장 표창장 수상<br>
+                    EATON B-LINE 공급 계약 체결</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2009</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Dec.</b>
+                    <li>김해상공대상 수상<br>
+                    46회 무역의 날 오백만불 수출탑 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2008</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>May.</b>
+                    <li>KS 인증</li>
+                  </ul>
+                  <ul>
+                    <b>Apr.</b>
+                    <li>MITSUBISHI ELECTRIC. 감사장 수상</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2007</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>May.</b>
+                    <li>ISO 9001:2000 인증</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2006</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Apr.</b>
+                    <li>주식회사 SNC창립<br>
+                    (신광/NEGUROSU 합작 회사 설립)</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="h_content">
+              <h4>2002</h4>
+              <dl>
+                <dt class>
+                  <i></i>
+                </dt>
+                <dd>
+                  <ul>
+                    <b>Aug.</b>
+                    <li>주식회사 신광 창립</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--푸터영역-->
+  <footer id="footer">
+    <div class="footer_inner">
+      <span>
+        <img src="/snc/img/common/logo_footer.svg" alt="SNC">
+      </span>
+      <address class="footer_info">
+        <ul>
+          <li>
+            <a href="#">개인정보보호정책</a>
+          </li>
+          <li>
+            <a href="#">이메일주소수집거부</a>
+          </li>
+          <li>
+            <a href="#">이용약관</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_05.html">찾아오시는 길</a>
+          </li>
+        </ul>
+        <p>
+          대표자: 김지수 주소: 경상남도 김해시 유하로 201(유하동) 전화번호:055-327-6023 팩스:055-327-3033 이메일:es.kim@snckr.com
+        </p>
+        <p>
+          Copyright ⓒ SNC CO., LTD.. All RIGHTS RESERVED.
+        </p>
+      </address>
+    </div>
+  </footer>
+  <!--탑메뉴 버튼-->
+   <a href="#" class="top_btn">
+     <em>TOP</em>
+   </a>
+   <script>
+     AOS.init();
+    </script> 
+ </body>
+ </html>

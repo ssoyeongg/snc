@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/snc/css/font.css">
+  <link rel="stylesheet" href="/snc/css/common.css">
+  <link rel="stylesheet" href="/snc/css/layout.css">
+  <link rel="stylesheet" href="/snc/css/sub.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="/snc/js/jquery-3.7.1.min.js"></script>
+  <script src="/snc/js/common.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>SNC</title>
+</head>
+<body>
+  <header id="header">
+    <h1>
+      <a href="/snc/index.html">
+        <img src="/snc/img/common/logo.svg" alt="SNC" class="default">
+        <img src="/snc/img/common/logo_white.svg" alt="SNC" class="hover">
+      </a>
+    </h1>
+    <!-- GNB영역 및 기타메뉴 -->
+    <nav id="nav">
+      <ul>
+        <li>
+          <a href="/snc/page/sub01_01.html">회사소개</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub01_01.html">CE0인사말</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_02.html">기업현황</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_03.html">연혁</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_04.html">경영이념</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub01_05.html">오시는 길</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub02_01.html">제품안내</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub02_01.html">LADDER</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_02.html">SOLID</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_03.html">PERFORATED</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_04.html">STRUT</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub02_05.html">SUPPORT</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub03_01.html">용융아연도금</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub03_01.html">도금공정</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub03_02.html">생산설비</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub03_03.html">환경</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub04_01.html">R&D CENTER</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub04_01.html">연구개발</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub04_02.html">검사설비</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/snc/page/sub05_01.html">RESOURCES</a>
+          <ul class="depth2">
+            <li>
+              <a href="/snc/page/sub05_01.html">Catalog</a>
+            </li>
+            <li>
+              <a href="/snc/page/sub05_02.html">Certificate</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="etc_menu">
+      <ul class="lang_area">
+        <li>
+          <button type="button" class="lang_btn">
+            <i>KR</i>
+          </button>
+          <i class="xi-globus"></i>
+          <ol class="lang_list">
+            <li>
+              <a href="#">KOR</a>
+            </li>
+            <li>
+              <a href="#">ENG</a>
+            </li>
+            <li>
+              <a href="#">JAP</a>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <button type="button" class="menu">
+        <img src="/snc/img/common/hamburger_menu.svg">
+      </button>
+      <button type="button" class="menu01">
+        <img src="/snc/img/common/hamburger_menu.svg">
+      </button>
+    </div>
+  </header>
+  <!-- 데스크탑 전체 메뉴 -->
+  <div id="site_map" class="open">
+    <img src="/snc/img/common/logo_white.svg">
+    <button type="button">
+      <i class="xi-close"></i>
+    </button>
+    <ul>
+      <li>
+        <a href="/snc/page/sub01_01.html">회사소개</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub01_01.html">CEO 인사말</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_02.html">기업현황</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_03.html">연혁</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_04.html">경영이념</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_05.html">오시는 길</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub02_01.html">제품안내</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub02_01.html">LADDER</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_02.html">SOLID</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_03.html">PERFORATED</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_04.html">STRUT</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub02_05.html">SUPPORT</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub03_01.html">용융아연도금</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub03_01.html">도금공정</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub03_02.html">생산설비</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub03_03.html">환경</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub04_01.html">R&D CENTER</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub04_01.html">연구개발</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub04_02.html">검사설비</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/snc/page/sub05_01.html">RESOURCES</a>
+        <ul class="all_depth">
+          <li>
+            <a href="/snc/page/sub05_01.html">Catalog</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub05_02.html">Certificate</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <main id="container">
+    <!-- 메인 비주얼 영역 -->
+    <div class="visual_sec">
+      <div class="main_visual_area swiper main-swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="txt_area">
+              <p class="tit">dream utopia</p>
+              <p>
+                고객의 꿈과 행복을 함께
+                <br>
+                만들어 가는 기업
+              </p>
+            </div>
+            <img src="/snc/img/main/main01.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <div class="txt_area">
+              <p class="tit">dream utopia</p>
+              <p>
+                저희 기업은 앞서가는 기술력과 노하우로
+                <br>
+                현재 업계 선두로 달리고 있는 대표적인 회사입니다.
+              </p>
+            </div>
+           <img src="/snc/img/main/main02.png" alt="">
+          </li>
+          <li class="swiper-slide">
+            <div class="txt_area">
+              <p class="tit">dream utopia</p>
+              <p>
+                지난 수년간의 노력과 시행착오를 통해
+                <br>
+                저희 기업은 고객님들과 더불어 성장하였습니다.
+              </p>
+            </div>
+            <img src="/snc/img/main/main03.png" alt="">
+          </li>
+        </ul>
+        <div class="all-box">
+          <div class="progress-box">
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 100 10">
+                <line x1="0" y1="0" x2="100" y2="0">
+              </svg>
+            </div>
+          </div>
+          <div class="arrow-box">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <button type="button" class="btn_pause">
+            <span></span>
+          </button>
+          <button type="button" class="btn_play">
+            <span></span>
+          </button>
+        </div>
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 섹션1:연혁 -->
+    <section class="history_area">
+      <h2>our history</h2>
+      <span class="history_img" data-aos="fade-down">
+        <img src="/snc/img/main/img_history.jpg">
+      </span>
+      <div class="history_list" data-aos="fade-down">
+        <dl>
+          <dt>
+            2022
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                <span>aug.</span>
+                <p>스마트공장 MES 도입</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>jan.</span>
+                <p>MITSUBISHI ELECTRIC 100주년 감사장 수상
+                </p>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="history_2023">
+          <dt>
+            2021
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                <span>dec.</span>
+                <p>김해장학재단 감사패 수상</p>
+              </li>
+              <li>
+                <span>oct.</span>
+                <p>홍콩 수소 발전소 수주</p>
+              </li>
+              <li>
+                <span>jun.</span>
+                <p>수출 강소기업 선정</p>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="btn_more">
+        <a href="/snc/page/sub01_03.html">read more</a>
+      </div>
+    </section>
+    <!-- 섹션2: 제품영역 -->
+    <section class="product_area">
+      <div class="product_inner">
+        <h2>our products</h2>
+        <div class="pro_inner_wrap">
+          <ul>
+            <li class="active"  data-title="pro_01">
+              <img src="/snc/img/main/ico_ladder_on.svg" alt="ladder" class="on">
+              <img src="/snc/img/main/ico_ladder_off.svg" alt="ladder" class="off">
+              <span class="active">Ladder</span>
+            </li>
+            <li data-title="pro_02">
+              <img src="/snc/img/main/ico_solid_on.svg" alt="solid" class="on">
+              <img src="/snc/img/main/ico_solid_off.svg" alt="solid" class="off">
+              <span>Solid</span>
+            </li>
+            <li data-title="pro_03">
+              <img src="/snc/img/main/ico_strut_on.svg" alt="strut" class="on">
+              <img src="/snc/img/main/ico_strut_off.svg" alt="strut" class="off">
+              <span>Strut</span>
+            </li>
+          </ul>
+          <div class="pro_info">
+            <div class="pro_info_inner" id="pro_01">
+              <div class="pro_img" data-aos="zoom-in">
+                <img src="/snc/img/main/img_pro01.jpg" alt="" >
+              </div>
+              <div class="pro_txt" data-aos="fade-up">
+                <p>
+                  강철 사다리 모양의 가이드<br>
+                  위에 공기 착암기를 놓고<br>
+                  실시하는 천공 공법
+                </p>
+                <a href="/snc/page/sub02_01.html" class="btn_more">
+                  Lean more
+                </a>
+              </div>
+            </div>
+            <div class="pro_info_inner" id="pro_02" style="display: none;">
+              <div class="pro_img">
+                <img src="/snc/img/main/img_pro02.jpg" alt="">
+              </div>
+              <div class="pro_txt">
+                <p>
+                  케이블 트레이 종류 중 하나인<br>
+                  바닥 밀폐형 트레이
+                </p>
+                <a href="/snc/page/sub02_02.html" class="btn_more">
+                  Lean more
+                </a>
+              </div>
+            </div>
+            <div class="pro_info_inner" id="pro_03" style="display: none;">
+              <div class="pro_img">
+                <img src="/snc/img/main/img_pro03.jpg" alt="">
+              </div>
+              <div class="pro_txt">
+                <p>
+                  버팀대의 압축강도 자체를<br> 
+                  이용, 응력 상태 확인하는 공법
+                </p>
+                <a href="/snc/page/sub02_04.html" class="btn_more">
+                  Lean more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 섹션3 카탈로그영역 -->
+    <section class="catalog_area">
+      <div class="catalog_inner">
+        <h2>our catalog</h2>
+        <div class="catalog_info">
+          <div class="catalog_txt" data-aos="fade-right">
+            <p>
+              고객의 꿈과 행복을 만들어 가는 기업
+            </p>
+            <b>
+              수년간의 노력과 연구를 통해 고객님들과 함께 성장하였습니다.
+            </b>
+            <a href="/snc/img/main/img_catalog.png" download>
+              Download
+            </a>
+          </div>
+          <strong data-aos="flip-left">
+            <img src="/snc/img/main/img_catalog.png" alt="#">
+          </strong>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 푸터영역 -->
+  <footer id="footer">
+    <div class="footer_inner">
+      <span>
+        <img src="/snc/img/common/logo_footer.svg" alt="SNC">
+      </span>
+      <address class="footer_info">
+        <ul class="fnb">
+          <li>
+            <a href="#">개인정보보호정책</a>
+          </li>
+          <li>
+            <a href="#">이메일주소수집거부</a>
+          </li>
+          <li>
+            <a href="#">이용약관</a>
+          </li>
+          <li>
+            <a href="/snc/page/sub01_05.html">찾아오시는 길</a>
+          </li>
+        </ul>
+        <ol>
+          <li>
+            <p>
+              대표자: 김지수 
+            </p>
+            <li>
+              <p>
+                주소: 경상남도 김해시 유하로 201(유하동)
+              </p>
+            </li>
+            <li>
+              <p>
+                전화번호:055-327-6023
+              </p>
+            </li>
+            <li>
+              <p>
+                팩스:055-327-3033
+              </p>
+            </li>
+            <li>
+              <p>
+                이메일:es.kim@snckr.com
+              </p>
+            </li>
+          </li>
+        </ol>
+        <p class="copyright">
+          Copyright ⓒ SNC CO., LTD.. All RIGHTS RESERVED.
+        </p>
+      </address>
+    </div>
+  </footer>
+  <!--탑메뉴 버튼-->
+  <a href="#" class="top_btn">
+    <em>TOP</em>
+  </a>
+  <script>
+    const progressLine = document.querySelector('.autoplay-progress svg')
+    const mainSwiper = new Swiper(".main-swiper", {
+      // 무한 슬라이드
+      loop: true,
+      //자동 재생
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      // bullet
+      pagination: {
+        el: ".main-swiper .swiper-pagination",
+        clickable: false,
+        type: "custom",
+        renderCustom: function (swiper, current, total) {
+          return (
+            '<span class="current">' + 0 + (current) + '</span>' + '<span class="total">' + 0 + (total) + '</span>'
+          );
+        }
+      },
+      //arrow
+      navigation: {
+        nextEl: ".main-swiper .swiper-button-next",
+        prevEl: ".main-swiper .swiper-button-prev",
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressLine.style.setProperty("--progress", 1 - progress)
+        }
+      },
+    });
+
+    $(".btn_pause").click(function () {
+      $(".btn_pause").hide();
+      $(".btn_play").show();
+      mainSwiper.autoplay.stop();
+    });
+    $(".btn_play").click(function () {
+      $(".btn_play").hide();
+      $(".btn_pause").show();
+      mainSwiper.autoplay.start();
+    });
+
+  </script>
+</body>
+
+</html>

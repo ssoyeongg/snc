@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i,em, address{
+  font-style: normal;
+}
+b,strong,h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+ul,ol,li{
+  list-style: none;
+}
+button,input{
+  background-color: transparent;
+  border: none;
+}
+
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: #010101;
+} 
+html{
+  font-family: "Merriweather Sans", "S-Core Dream",  sans-serif, serif;
+  font-weight: 400;
+  font-size: 62.5%; /* 10px입니다.*/
+  color: #010101;
+}
