@@ -31,7 +31,20 @@
   height: 100%;
   padding-top: 300px;
   text-align: center;
+  position: relative;
 }
+
+#sub_container .sub_banner .sub_banner_inner:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
 #sub_container .sub_banner .sub_banner_inner h2{
   position: relative;
   display: inline-block;
@@ -61,6 +74,8 @@
   background-color: #fff;
   border-radius: 50px;
   margin-bottom: 90px;
+  position: relative;
+  z-index: 9;
 }
 #sub_container .menu_list03, #sub_container .menu_list04, #sub_container .menu_list05{
   width: 482px;
@@ -1493,3 +1508,4 @@ left: -955px;
   font-size: 20px;
   font-weight: 400;
 }
+
